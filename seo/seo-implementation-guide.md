@@ -30,7 +30,7 @@ This comprehensive SEO package is designed to establish FSR Dumpsters as the dom
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dumpster Rental Kansas City - FSR Dumpsters | 15 & 20 Yard Roll Off | Same Day Service</title>
-<meta name="description" content="Kansas City dumpster rental service. 15 & 20 yard roll off dumpsters starting at $300/week. Same day delivery available. Call (816) 555-1234.">
+<meta name="description" content="Kansas City dumpster rental service. 15 & 20 yard roll off dumpsters starting at $300/week. Same day delivery available. Call (913) 206-3467.">
 <link rel="canonical" href="https://fsrdumpsters.com/" />
 ```
 
@@ -110,7 +110,7 @@ This comprehensive SEO package is designed to establish FSR Dumpsters as the dom
 **Critical Business Information:**
 - **Name:** FSR Dumpsters (exactly as registered)
 - **Address:** 6308 N Main St, Gladstone, MO 64118
-- **Phone:** (816) 555-1234 (update with real number)
+- **Phone:** (913) 206-3467 (update with real number)
 - **Website:** https://fsrdumpsters.com
 - **Primary Category:** Waste Management Service
 
@@ -368,7 +368,7 @@ This comprehensive SEO package is designed to establish FSR Dumpsters as the dom
 
 **FSR Dumpsters Business Details:**
 - **Address:** 6308 N Main St, Gladstone, MO 64118
-- **Phone:** (816) 555-1234 (update with actual number)
+- **Phone:** (913) 206-3467 (update with actual number)
 - **Email:** info@fsrdumpsters.com (update with actual email)
 - **Website:** https://fsrdumpsters.com
 

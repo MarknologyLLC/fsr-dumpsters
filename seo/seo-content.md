@@ -9,7 +9,7 @@
 
 ### Meta Description
 ```html
-<meta name="description" content="Kansas City dumpster rental service. 15 & 20 yard roll off dumpsters starting at $300/week. Serving Clay, Jackson, Platte, Cass, Johnson, Wyandotte & Leavenworth counties. Same day delivery available. Call (816) 555-1234.">
+<meta name="description" content="Kansas City dumpster rental service. 15 & 20 yard roll off dumpsters starting at $300/week. Serving Clay, Jackson, Platte, Cass, Johnson, Wyandotte & Leavenworth counties. Same day delivery available. Call (913) 206-3467.">
 ```
 
 ## H1/H2 Hierarchy Structure
@@ -78,7 +78,7 @@
 Our dumpster rental prices are straightforward: 15-yard dumpsters are $300 per week, and 20-yard dumpsters are $400 per week. This includes delivery, pickup, and disposal fees within our Kansas City Metro service area. No hidden charges or surprise fees.
 
 ### 2. What size dumpster do I need for my project?
-A 15-yard dumpster works well for small to medium home cleanouts, garage cleanouts, small remodeling projects, and minor landscaping debris. A 20-yard dumpster is ideal for larger home renovations, roofing projects, major cleanouts, and construction debris. If you're unsure, call us at (816) 555-1234 for personalized recommendations.
+A 15-yard dumpster works well for small to medium home cleanouts, garage cleanouts, small remodeling projects, and minor landscaping debris. A 20-yard dumpster is ideal for larger home renovations, roofing projects, major cleanouts, and construction debris. If you're unsure, call us at (913) 206-3467 for personalized recommendations.
 
 ### 3. How long can I keep the dumpster?
 Our standard rental period is 7 days. This gives you plenty of time to complete your project without feeling rushed. If you need the dumpster longer, contact us to discuss extended rental options.
@@ -121,7 +121,7 @@ Our dumpster rental service covers all major Kansas City Metro communities inclu
 ## Call-to-Action Content
 
 ### Primary CTA
-Ready to get started? Call FSR Dumpsters at (816) 555-1234 or email info@fsrdumpsters.com for immediate service. We're your local Kansas City dumpster rental solution.
+Ready to get started? Call FSR Dumpsters at (913) 206-3467 or email info@fsrdumpsters.com for immediate service. We're your local Kansas City dumpster rental solution.
 
 ### Secondary CTAs
 - "Get same-day delivery when you call before noon"

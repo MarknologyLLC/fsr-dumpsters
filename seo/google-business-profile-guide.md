@@ -5,7 +5,7 @@
 ### Primary Business Details
 - **Business Name:** FSR Dumpsters (exactly as registered)
 - **Address:** 6308 N Main St, Gladstone, MO 64118
-- **Phone:** (816) 555-1234
+- **Phone:** (913) 206-3467
 - **Website:** https://fsrdumpsters.com
 - **Business Hours:**
   - Monday-Friday: 7:00 AM - 5:00 PM
@@ -142,7 +142,7 @@ Would you mind taking 30 seconds to share your experience on Google? Your feedba
 Thanks again for your business!
 
 FSR Dumpsters Team
-(816) 555-1234
+(913) 206-3467
 ```
 
 ### Review Response Templates
@@ -159,7 +159,7 @@ Thank you [Name]! We appreciate your feedback and are glad we could help with yo
 
 #### 3-Star or Lower Response
 ```
-Thanks for the feedback, [Name]. We take all customer experiences seriously and would love to make this right. Please call us at (816) 555-1234 so we can discuss your concerns. - FSR Management
+Thanks for the feedback, [Name]. We take all customer experiences seriously and would love to make this right. Please call us at (913) 206-3467 so we can discuss your concerns. - FSR Management
 ```
 
 ## Google Posts Schedule
@@ -170,7 +170,7 @@ Thanks for the feedback, [Name]. We take all customer experiences seriously and 
 ```
 🚛 SAME-DAY DELIVERY AVAILABLE
 Need a dumpster today? Call before noon and we'll deliver to your Kansas City Metro location the same day! 15 & 20-yard sizes available.
-📞 (816) 555-1234
+📞 (913) 206-3467
 #KansasCityDumpsters #SameDayService
 ```
 
@@ -178,7 +178,7 @@ Need a dumpster today? Call before noon and we'll deliver to your Kansas City Me
 ```
 🏗️ PROJECT TIP WEDNESDAY
 Planning a roofing project? A 20-yard dumpster handles shingles from most residential roofs. Our Kansas City team can help you choose the right size.
-📞 (816) 555-1234
+📞 (913) 206-3467
 #RoofingProject #DumpsterTips
 ```
 
@@ -186,7 +186,7 @@ Planning a roofing project? A 20-yard dumpster handles shingles from most reside
 ```
 🌟 SERVING [CITY NAME] 
 FSR Dumpsters proudly serves [specific city] and all of [County Name] County. Fast delivery, fair prices, reliable pickup. That's the FSR difference.
-📞 (816) 555-1234
+📞 (913) 206-3467
 #[CityName]Dumpsters #KCMetro
 ```
 
@@ -223,7 +223,7 @@ FSR Dumpsters proudly serves [specific city] and all of [County Name] County. Fa
    **A:** We serve the entire Kansas City Metro across 7 counties: Clay, Jackson, Platte, and Cass in Missouri, plus Johnson, Wyandotte, and Leavenworth in Kansas.
 
 4. **Q:** How long can I keep the dumpster?
-   **A:** Standard rental is 7 days. Extended rentals available - just call us at (816) 555-1234.
+   **A:** Standard rental is 7 days. Extended rentals available - just call us at (913) 206-3467.
 
 5. **Q:** What can I put in the dumpster?
    **A:** Most household debris, construction materials, furniture, and yard waste. No hazardous materials, electronics, or chemicals.

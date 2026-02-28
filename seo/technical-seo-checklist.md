@@ -117,7 +117,7 @@ Sitemap: https://fsrdumpsters.com/sitemap.xml
 ```html
 <!-- Basic Open Graph Tags -->
 <meta property="og:title" content="Dumpster Rental Kansas City - FSR Dumpsters | 15 & 20 Yard Roll Off" />
-<meta property="og:description" content="Kansas City dumpster rental service. 15 & 20 yard roll off dumpsters starting at $300/week. Same day delivery. Serving 7 counties in MO & KS. Call (816) 555-1234." />
+<meta property="og:description" content="Kansas City dumpster rental service. 15 & 20 yard roll off dumpsters starting at $300/week. Same day delivery. Serving 7 counties in MO & KS. Call (913) 206-3467." />
 <meta property="og:type" content="business.business" />
 <meta property="og:url" content="https://fsrdumpsters.com/" />
 <meta property="og:site_name" content="FSR Dumpsters" />
@@ -134,7 +134,7 @@ Sitemap: https://fsrdumpsters.com/sitemap.xml
 <meta property="business:contact_data:region" content="MO" />
 <meta property="business:contact_data:postal_code" content="64118" />
 <meta property="business:contact_data:country_name" content="USA" />
-<meta property="business:contact_data:phone_number" content="8165551234" />
+<meta property="business:contact_data:phone_number" content="9132063467" />
 <meta property="business:contact_data:website" content="https://fsrdumpsters.com" />
 
 <!-- Facebook App ID (if applicable) -->
@@ -155,7 +155,7 @@ Sitemap: https://fsrdumpsters.com/sitemap.xml
 <!-- Twitter Card Tags -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Dumpster Rental Kansas City - FSR Dumpsters | Same Day Service" />
-<meta name="twitter:description" content="Kansas City dumpster rental. 15 & 20 yard containers starting at $300/week. Same day delivery available. Serving 7 counties. Call (816) 555-1234." />
+<meta name="twitter:description" content="Kansas City dumpster rental. 15 & 20 yard containers starting at $300/week. Same day delivery available. Serving 7 counties. Call (913) 206-3467." />
 <meta name="twitter:image" content="https://fsrdumpsters.com/images/fsr-dumpsters-twitter-card.jpg" />
 <meta name="twitter:image:alt" content="FSR Dumpsters Kansas City dumpster rental service" />
 
@@ -297,7 +297,7 @@ Sitemap: https://fsrdumpsters.com/sitemap.xml
   
   <!-- SEO Meta Tags -->
   <title>Dumpster Rental Kansas City - FSR Dumpsters | 15 & 20 Yard Roll Off | Same Day Service</title>
-  <meta name="description" content="Kansas City dumpster rental service. 15 & 20 yard roll off dumpsters starting at $300/week. Serving Clay, Jackson, Platte, Cass, Johnson, Wyandotte & Leavenworth counties. Same day delivery available. Call (816) 555-1234.">
+  <meta name="description" content="Kansas City dumpster rental service. 15 & 20 yard roll off dumpsters starting at $300/week. Serving Clay, Jackson, Platte, Cass, Johnson, Wyandotte & Leavenworth counties. Same day delivery available. Call (913) 206-3467.">
   
   <!-- Canonical URL -->
   <link rel="canonical" href="https://fsrdumpsters.com/" />
