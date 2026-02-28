@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FSR Dumpsters - Kansas City's Trusted Dumpster Rental Service | 15 & 20 Yard Roll-Off Containers</title>
+    <meta name="description" content="Professional dumpster rental service in Kansas City Metro. 15-yard ($300/week) and 20-yard ($400/week) roll-off containers with 7-day rental included. Serving 7 counties across MO and KS.">
+    <meta name="keywords" content="dumpster rental Kansas City, roll off dumpster KC, waste management Missouri, construction dumpster rental, home cleanout dumpster, Gladstone MO dumpster">
+    <meta name="author" content="FSR Dumpsters">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="FSR Dumpsters - Kansas City's Trusted Dumpster Rental Service">
+    <meta property="og:description" content="Professional dumpster rental service in Kansas City Metro. 15-yard ($300/week) and 20-yard ($400/week) roll-off containers with 7-day rental included.">
+    <meta property="og:image" content="https://fsrdumpsters.com/images/fsr-dumpsters-og.jpg">
+    <meta property="og:url" content="https://fsrdumpsters.com">
+    <meta property="og:type" content="business.business">
+    <meta property="og:site_name" content="FSR Dumpsters">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FSR Dumpsters - Kansas City's Trusted Dumpster Rental Service">
+    <meta name="twitter:description" content="Professional dumpster rental service in Kansas City Metro. 15-yard ($300/week) and 20-yard ($400/week) roll-off containers with 7-day rental included.">
+    <meta name="twitter:image" content="https://fsrdumpsters.com/images/fsr-dumpsters-og.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="canonical" href="https://fsrdumpsters.com">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-dark': '#1A1A2E',
+                        'primary-accent': '#E8720C',
+                        'secondary-accent': '#C62828',
+                        'neutral': '#B0BEC5',
+                        'gold': '#D4A017'
+                    },
+                    fontFamily: {
+                        'brand': ['Georgia', 'Times New Roman', 'serif'],
+                        'body': ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .header-shadow {
+            box-shadow: 0 2px 10px rgba(26, 26, 46, 0.1);
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #1A1A2E 0%, #2C2C54 100%);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #1A1A2E 0%, #E8720C 100%);
+        }
+        .pricing-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .pricing-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(232, 114, 12, 0.15);
+        }
+        .benefit-card:hover {
+            background: rgba(232, 114, 12, 0.05);
+        }
+        .instagram-item {
+            transition: transform 0.3s ease;
+        }
+        .instagram-item:hover {
+            transform: scale(1.05);
+        }
+        .btn-primary {
+            background: linear-gradient(45deg, #E8720C, #C62828);
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background: linear-gradient(45deg, #C62828, #E8720C);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(232, 114, 12, 0.3);
+        }
+    </style>
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://fsrdumpsters.com/#organization",
+          "name": "FSR Dumpsters",
+          "alternateName": "FSR Dumpster Rental",
+          "description": "Professional dumpster rental service in Kansas City Metro area. 15 and 20 yard roll-off containers for residential and commercial projects. Serving 7 counties across Missouri and Kansas.",
+          "url": "https://fsrdumpsters.com",
+          "telephone": "913-206-3467",
+          "email": "info@fsrdumpsters.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "6308 N Main St",
+            "addressLocality": "Gladstone",
+            "addressRegion": "MO",
+            "postalCode": "64118",
+            "addressCountry": "US"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "39.2031",
+            "longitude": "-94.5553"
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+              "opens": "07:00",
+              "closes": "18:00"
+            }
+          ],
+          "priceRange": "$300-$400",
+          "currenciesAccepted": "USD",
+          "paymentAccepted": "Cash, Check, Credit Card",
+          "areaServed": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+              "@type": "GeoCoordinates",
+              "latitude": "39.0997",
+              "longitude": "-94.5786"
+            },
+            "geoRadius": "50000"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "bestRating": "5",
+            "worstRating": "1",
+            "ratingCount": "127"
+          },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Dumpster Rental Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "15 Yard Dumpster Rental",
+                  "description": "15-yard roll-off dumpster perfect for small to medium projects, home cleanouts, and minor renovations."
+                },
+                "price": "300.00",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "20 Yard Dumpster Rental",
+                  "description": "20-yard roll-off dumpster ideal for larger projects, roofing jobs, major renovations, and construction debris."
+                },
+                "price": "400.00",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock"
+              }
+            ]
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does dumpster rental cost in Kansas City?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Our dumpster rental prices are straightforward: 15-yard dumpsters are $300 per week, and 20-yard dumpsters are $400 per week. This includes delivery, pickup, and disposal fees within our Kansas City Metro service area. No hidden charges or surprise fees."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What size dumpster do I need for my project?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A 15-yard dumpster works well for small to medium home cleanouts, garage cleanouts, small remodeling projects, and minor landscaping debris. A 20-yard dumpster is ideal for larger home renovations, roofing projects, major cleanouts, and construction debris. If you're unsure, call us at (913) 206-3467 for personalized recommendations."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long can I keep the dumpster?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Our standard rental period is 7 days. This gives you plenty of time to complete your project without feeling rushed. If you need the dumpster longer, contact us to discuss extended rental options."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What areas do you serve around Kansas City?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We serve the entire Kansas City Metro area across 7 counties: Clay, Jackson, Platte, and Cass counties in Missouri, plus Johnson, Wyandotte, and Leavenworth counties in Kansas. This includes Kansas City, Gladstone, Liberty, Independence, Overland Park, Olathe, Lenexa, Lee's Summit, Blue Springs, and surrounding communities."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How quickly can you deliver a dumpster?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We offer same-day delivery when you call before noon, Monday through Friday. For weekend delivery, please call by Thursday to ensure availability. Our goal is to get you the dumpster when you need it."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="font-body text-gray-900 antialiased">
+    
+    <!-- Sticky Header -->
+    <header id="header" class="sticky top-0 z-50 bg-white transition-shadow duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="flex justify-between items-center py-3">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="#"><img src="assets/fsr-logo.jpg" alt="FSR Dumpsters" class="h-14 lg:h-16 w-auto"></a>
+                </div>
+                
+                <!-- Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#sizes" class="text-gray-700 hover:text-primary-accent font-medium transition-colors">Sizes</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary-accent font-medium transition-colors">About</a>
+                    <a href="#service-area" class="text-gray-700 hover:text-primary-accent font-medium transition-colors">Service Area</a>
+                    <a href="#book-now" class="text-gray-700 hover:text-primary-accent font-medium transition-colors">Book Now</a>
+                </nav>
+                
+                <!-- Phone Button -->
+                <div class="flex items-center space-x-4">
+                    <a href="tel:913-206-3467" class="btn-primary text-white px-4 py-2 rounded-lg font-semibold text-sm lg:text-base hover:shadow-lg transition-all duration-300">
+                        Call (913) 206-3467
+                    </a>
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-button" class="md:hidden p-2 rounded-md text-gray-700 hover:text-primary-accent">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="#sizes" class="text-gray-700 hover:text-primary-accent font-medium py-2">Sizes</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary-accent font-medium py-2">About</a>
+                    <a href="#service-area" class="text-gray-700 hover:text-primary-accent font-medium py-2">Service Area</a>
+                    <a href="#book-now" class="text-gray-700 hover:text-primary-accent font-medium py-2">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative text-white py-12 lg:py-20 overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="assets/hero-driveway.jpg" alt="FSR Dumpster on residential driveway" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-primary-dark/90 via-primary-dark/75 to-primary-dark/60"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 text-center">
+            <h1 class="text-4xl lg:text-6xl font-bold mb-4 fade-in">
+                Kansas City's Trusted<br>
+                <span class="text-gold">Dumpster Rental</span>
+            </h1>
+            <p class="text-xl lg:text-2xl mb-8 fade-in max-w-3xl mx-auto text-gray-200">
+                Professional roll-off dumpsters with 7-day rental included. Same-day delivery across 7 counties in the KC Metro area. No hidden fees.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center fade-in">
+                <a href="#book-now" class="btn-primary text-white px-8 py-4 rounded-lg text-lg font-bold hover:shadow-xl transition-all duration-300">
+                    Book Your Dumpster
+                </a>
+                <a href="tel:913-206-3467" class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-white hover:text-primary-dark transition-all duration-300">
+                    Call (913) 206-3467
+                </a>
+            </div>
+            <div class="mt-8 text-sm text-gray-300 fade-in">
+                ✓ Same-Day Delivery Available  ✓ 7-Day Rental Period  ✓ All Fees Included
+            </div>
+        </div>
+    </section>
+
+    <!-- Sizes & Pricing -->
+    <section id="sizes" class="py-12 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary-dark mb-4 fade-in">
+                    Dumpster Sizes & Pricing
+                </h2>
+                <p class="text-xl text-gray-600 fade-in max-w-3xl mx-auto">
+                    Straightforward pricing with no hidden fees. 7-day rental period included with every order.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
+                <!-- 15 Yard Dumpster -->
+                <div class="pricing-card bg-white rounded-2xl shadow-lg p-8 fade-in">
+                    <div class="text-center mb-6">
+                        <div class="inline-flex items-center justify-center w-20 h-20 bg-primary-accent rounded-full mb-4">
+                            <span class="text-2xl font-bold text-white">15</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary-dark mb-2">15 Yard Dumpster</h3>
+                        <div class="text-4xl font-bold text-primary-accent mb-2">$300<span class="text-lg text-gray-500">/week</span></div>
+                    </div>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center text-gray-700">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Dimensions: 14' L × 8' W × 4' H
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Capacity: 4-6 pickup truck loads
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Weight limit: 3 tons
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            7-day rental included
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 rounded-lg p-4 mb-6">
+                        <h4 class="font-semibold text-primary-dark mb-2">Perfect for:</h4>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Home cleanouts & garage cleanouts</li>
+                            <li>• Small renovation projects</li>
+                            <li>• Yard debris & landscaping</li>
+                            <li>• Light construction debris</li>
+                        </ul>
+                    </div>
+                    
+                    <a href="#book-now" class="btn-primary text-white w-full py-3 rounded-lg font-semibold text-center block hover:shadow-lg transition-all duration-300">
+                        Book 15 Yard Dumpster
+                    </a>
+                </div>
+
+                <!-- 20 Yard Dumpster -->
+                <div class="pricing-card bg-white rounded-2xl shadow-lg p-8 fade-in border-2 border-primary-accent relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary-accent text-white px-6 py-2 rounded-full text-sm font-bold">
+                        MOST POPULAR
+                    </div>
+                    <div class="text-center mb-6">
+                        <div class="inline-flex items-center justify-center w-20 h-20 bg-primary-accent rounded-full mb-4">
+                            <span class="text-2xl font-bold text-white">20</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary-dark mb-2">20 Yard Dumpster</h3>
+                        <div class="text-4xl font-bold text-primary-accent mb-2">$400<span class="text-lg text-gray-500">/week</span></div>
+                    </div>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center text-gray-700">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Dimensions: 22' L × 8' W × 4.5' H
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Capacity: 6-8 pickup truck loads
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Weight limit: 4 tons
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            7-day rental included
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 rounded-lg p-4 mb-6">
+                        <h4 class="font-semibold text-primary-dark mb-2">Perfect for:</h4>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Large home renovations</li>
+                            <li>• Roofing projects</li>
+                            <li>• Construction debris</li>
+                            <li>• Major cleanouts & estate sales</li>
+                        </ul>
+                    </div>
+                    
+                    <a href="#book-now" class="btn-primary text-white w-full py-3 rounded-lg font-semibold text-center block hover:shadow-lg transition-all duration-300">
+                        Book 20 Yard Dumpster
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary-dark mb-4 fade-in">
+                    How It Works
+                </h2>
+                <p class="text-xl text-gray-600 fade-in">
+                    Simple, fast, and reliable dumpster rental process
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Step 1: Book -->
+                <div class="text-center fade-in">
+                    <div class="inline-flex items-center justify-center w-20 h-20 bg-primary-accent rounded-full mb-6">
+                        <!-- Calendar Clock Icon -->
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                            <circle cx="12" cy="16" r="3"></circle>
+                            <polyline points="12,14 12,16 13,17"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-dark mb-3">1. Book Your Dumpster</h3>
+                    <p class="text-gray-600">
+                        Call us or fill out our online form. Choose your size and preferred delivery date. We'll confirm your order within 15 minutes.
+                    </p>
+                </div>
+
+                <!-- Step 2: We Deliver -->
+                <div class="text-center fade-in">
+                    <div class="inline-flex items-center justify-center w-20 h-20 bg-primary-accent rounded-full mb-6">
+                        <!-- Delivery Truck Icon -->
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <rect x="1" y="3" width="15" height="13"></rect>
+                            <polygon points="16,3 19,3 23,8 23,16 16,16"></polygon>
+                            <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                            <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-dark mb-3">2. We Deliver</h3>
+                    <p class="text-gray-600">
+                        Our experienced drivers deliver your dumpster exactly where you need it. Same-day delivery available for orders placed before noon.
+                    </p>
+                </div>
+
+                <!-- Step 3: We Pick Up -->
+                <div class="text-center fade-in">
+                    <div class="inline-flex items-center justify-center w-20 h-20 bg-primary-accent rounded-full mb-6">
+                        <!-- Recycle Haul Icon -->
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <polyline points="22,12 18,12 15,21 9,3 6,12 2,12"></polyline>
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-dark mb-3">3. We Pick Up</h3>
+                    <p class="text-gray-600">
+                        After your 7-day rental period, we'll pick up the dumpster and handle all disposal. Responsible waste management guaranteed.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Fleet Gallery -->
+    <section class="py-10 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <h2 class="text-3xl font-bold text-primary-dark mb-6 text-center fade-in">Our Fleet in Action</h2>
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
+                <img src="assets/dumpster-real-1.jpg" alt="FSR dumpster delivery in Kansas City" class="w-full h-48 lg:h-56 object-cover rounded-lg shadow-md fade-in">
+                <img src="assets/dumpster-real-2.jpg" alt="FSR dumpster at residential job site" class="w-full h-48 lg:h-56 object-cover rounded-lg shadow-md fade-in">
+                <img src="assets/fleet-yard.jpg" alt="FSR dumpster fleet ready for delivery" class="w-full h-48 lg:h-56 object-cover rounded-lg shadow-md fade-in">
+                <img src="assets/delivery-action.jpg" alt="Dumpster delivery in progress" class="w-full h-48 lg:h-56 object-cover rounded-lg shadow-md fade-in">
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose FSR -->
+    <section id="about" class="py-10 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary-dark mb-4 fade-in">
+                    Why Choose FSR Dumpsters?
+                </h2>
+                <p class="text-xl text-gray-600 fade-in max-w-3xl mx-auto">
+                    Local Kansas City company with years of experience serving residential and commercial customers across the metro area.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Benefit 1 -->
+                <div class="benefit-card bg-white rounded-xl p-6 text-center fade-in transition-colors duration-300">
+                    <div class="inline-flex items-center justify-center w-16 h-16 bg-primary-accent rounded-full mb-4">
+                        <!-- Shield Check Icon -->
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-primary-dark mb-2">Reliable Service</h3>
+                    <p class="text-gray-600 text-sm">On-time delivery and pickup guaranteed. Professional drivers who respect your property.</p>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div class="benefit-card bg-white rounded-xl p-6 text-center fade-in transition-colors duration-300">
+                    <div class="inline-flex items-center justify-center w-16 h-16 bg-primary-accent rounded-full mb-4">
+                        <!-- Dollar Price Icon -->
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-primary-dark mb-2">Competitive Pricing</h3>
+                    <p class="text-gray-600 text-sm">Transparent pricing with no hidden fees. All delivery, pickup, and disposal costs included.</p>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div class="benefit-card bg-white rounded-xl p-6 text-center fade-in transition-colors duration-300">
+                    <div class="inline-flex items-center justify-center w-16 h-16 bg-primary-accent rounded-full mb-4">
+                        <!-- Calendar Clock Icon -->
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-primary-dark mb-2">7-Day Rental</h3>
+                    <p class="text-gray-600 text-sm">Full week rental period included with every order. No rush, no extra daily charges.</p>
+                </div>
+
+                <!-- Benefit 4 -->
+                <div class="benefit-card bg-white rounded-xl p-6 text-center fade-in transition-colors duration-300">
+                    <div class="inline-flex items-center justify-center w-16 h-16 bg-primary-accent rounded-full mb-4">
+                        <!-- Map Pin KC Icon -->
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <circle cx="12" cy="11" r="3"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-primary-dark mb-2">KC Local</h3>
+                    <p class="text-gray-600 text-sm">Proudly serving Kansas City for years. Local ownership, personal service, community focused.</p>
+                </div>
+
+                <!-- Benefit 5 -->
+                <div class="benefit-card bg-white rounded-xl p-6 text-center fade-in transition-colors duration-300">
+                    <div class="inline-flex items-center justify-center w-16 h-16 bg-primary-accent rounded-full mb-4">
+                        <!-- Delivery Truck Icon -->
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <rect x="1" y="3" width="15" height="13"></rect>
+                            <polygon points="16,3 19,3 23,8 23,16 16,16"></polygon>
+                            <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                            <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-primary-dark mb-2">Fast Delivery</h3>
+                    <p class="text-gray-600 text-sm">Same-day delivery available. Call before noon Monday-Friday to get your dumpster today.</p>
+                </div>
+
+                <!-- Benefit 6 -->
+                <div class="benefit-card bg-white rounded-xl p-6 text-center fade-in transition-colors duration-300">
+                    <div class="inline-flex items-center justify-center w-16 h-16 bg-primary-accent rounded-full mb-4">
+                        <!-- Broom Sweep Icon -->
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2l3 7 7 1-5 4.9 1.2 6.9L12 18l-6.2 3.8L7 14.9 2 10l7-1z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-primary-dark mb-2">Clean Removal</h3>
+                    <p class="text-gray-600 text-sm">Professional pickup service that leaves your property clean. Responsible disposal practices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Area -->
+    <section id="service-area" class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary-dark mb-4 fade-in">
+                    Service Area
+                </h2>
+                <p class="text-xl text-gray-600 fade-in">
+                    Proudly serving the Kansas City Metro across 7 counties
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Missouri Counties -->
+                <div class="fade-in">
+                    <h3 class="text-2xl font-bold text-primary-dark mb-6 text-center">
+                        <span class="text-primary-accent">Missouri</span> Counties
+                    </h3>
+                    <div class="bg-gray-50 rounded-xl p-6">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <h4 class="font-semibold text-primary-dark mb-3">Clay County</h4>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Kansas City</li>
+                                    <li>• Gladstone</li>
+                                    <li>• Liberty</li>
+                                    <li>• Kearney</li>
+                                    <li>• Excelsior Springs</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-primary-dark mb-3">Jackson County</h4>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Kansas City</li>
+                                    <li>• Independence</li>
+                                    <li>• Lee's Summit</li>
+                                    <li>• Blue Springs</li>
+                                    <li>• Raytown</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-primary-dark mb-3">Platte County</h4>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Platte City</li>
+                                    <li>• Parkville</li>
+                                    <li>• Riverside</li>
+                                    <li>• Smithville</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-primary-dark mb-3">Cass County</h4>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Belton</li>
+                                    <li>• Raymore</li>
+                                    <li>• Grandview</li>
+                                    <li>• Peculiar</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kansas Counties -->
+                <div class="fade-in">
+                    <h3 class="text-2xl font-bold text-primary-dark mb-6 text-center">
+                        <span class="text-primary-accent">Kansas</span> Counties
+                    </h3>
+                    <div class="bg-gray-50 rounded-xl p-6">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <h4 class="font-semibold text-primary-dark mb-3">Johnson County</h4>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Overland Park</li>
+                                    <li>• Olathe</li>
+                                    <li>• Lenexa</li>
+                                    <li>• Shawnee</li>
+                                    <li>• Leawood</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-primary-dark mb-3">Wyandotte County</h4>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Kansas City KS</li>
+                                    <li>• Bonner Springs</li>
+                                    <li>• Edwardsville</li>
+                                    <li>• Lake Quivira</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-primary-dark mb-3">Leavenworth County</h4>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Leavenworth</li>
+                                    <li>• Lansing</li>
+                                    <li>• Tonganoxie</li>
+                                    <li>• Basehor</li>
+                                </ul>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="text-center">
+                                    <p class="text-sm text-gray-600 italic">Plus surrounding communities throughout the KC Metro area</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-12 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary-dark mb-4 fade-in">
+                    Frequently Asked Questions
+                </h2>
+                <p class="text-xl text-gray-600 fade-in">
+                    Everything you need to know about our dumpster rental service
+                </p>
+            </div>
+            
+            <div class="space-y-6 fade-in">
+                <!-- FAQ 1 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h3 class="text-lg font-semibold text-primary-dark mb-3">How much does dumpster rental cost in Kansas City?</h3>
+                    <p class="text-gray-600">Our dumpster rental prices are straightforward: 15-yard dumpsters are $300 per week, and 20-yard dumpsters are $400 per week. This includes delivery, pickup, and disposal fees within our Kansas City Metro service area. No hidden charges or surprise fees.</p>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h3 class="text-lg font-semibold text-primary-dark mb-3">What size dumpster do I need for my project?</h3>
+                    <p class="text-gray-600">A 15-yard dumpster works well for small to medium home cleanouts, garage cleanouts, small remodeling projects, and minor landscaping debris. A 20-yard dumpster is ideal for larger home renovations, roofing projects, major cleanouts, and construction debris. If you're unsure, call us at (913) 206-3467 for personalized recommendations.</p>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h3 class="text-lg font-semibold text-primary-dark mb-3">How long can I keep the dumpster?</h3>
+                    <p class="text-gray-600">Our standard rental period is 7 days. This gives you plenty of time to complete your project without feeling rushed. If you need the dumpster longer, contact us to discuss extended rental options.</p>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h3 class="text-lg font-semibold text-primary-dark mb-3">What can I put in the dumpster?</h3>
+                    <p class="text-gray-600">You can dispose of most household junk, construction debris, furniture, appliances, yard waste, and general trash. We cannot accept hazardous materials, chemicals, paint, batteries, tires, or liquids. Contact us if you have questions about specific items.</p>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h3 class="text-lg font-semibold text-primary-dark mb-3">How quickly can you deliver a dumpster?</h3>
+                    <p class="text-gray-600">We offer same-day delivery when you call before noon, Monday through Friday. For weekend delivery, please call by Thursday to ensure availability. Our goal is to get you the dumpster when you need it.</p>
+                </div>
+
+                <!-- FAQ 6 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h3 class="text-lg font-semibold text-primary-dark mb-3">Where will the dumpster be placed on my property?</h3>
+                    <p class="text-gray-600">We can place the dumpster in your driveway, on the street (if permitted), or anywhere on your property that our truck can safely access. We recommend a flat, hard surface and clear path for delivery. We'll work with you to find the best placement.</p>
+                </div>
+
+                <!-- FAQ 7 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h3 class="text-lg font-semibold text-primary-dark mb-3">Do I need a permit for a dumpster?</h3>
+                    <p class="text-gray-600">If the dumpster is placed on your property (driveway, yard), no permit is typically required. If placed on a city street or right-of-way, you may need a permit from your local municipality. We can help advise you on local requirements.</p>
+                </div>
+
+                <!-- FAQ 8 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h3 class="text-lg font-semibold text-primary-dark mb-3">What are the weight limits?</h3>
+                    <p class="text-gray-600">15-yard dumpsters have a weight limit of 3 tons, and 20-yard dumpsters have a weight limit of 4 tons. Heavy materials like concrete, dirt, and roofing shingles can add up quickly. If you're disposing of heavy materials, let us know when booking.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Feed Section -->
+    <section id="instagram" class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary-dark mb-4 fade-in">
+                    Follow Us on Instagram
+                </h2>
+                <p class="text-xl text-gray-600 fade-in mb-6">
+                    See our work in action and get tips for your next project
+                </p>
+                <a href="https://instagram.com/fsrdumpsters" target="_blank" class="inline-flex items-center text-primary-accent hover:text-secondary-accent font-semibold text-lg transition-colors">
+                    @fsrdumpsters
+                    <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.618 5.367 11.987 11.988 11.987s11.987-5.369 11.987-11.987C24.004 5.367 18.635.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.611-3.185-1.559-.737-.948-1.017-2.162-.773-3.356.244-1.194.977-2.24 2.029-2.897 1.052-.657 2.334-.877 3.545-.61 1.211.267 2.26 1 2.917 2.029.657 1.029.877 2.278.61 3.451-.267 1.173-1 2.185-2.029 2.842-.568.363-1.211.566-1.87.566-.451 0-.902-.091-1.334-.262-.432-.171-.821-.421-1.148-.736-.327-.315-.587-.687-.766-1.098-.179-.411-.274-.851-.274-1.294 0-1.297.611-2.448 1.559-3.185.948-.737 2.162-1.017 3.356-.773 1.194.244 2.24.977 2.897 2.029.657 1.052.877 2.334.61 3.545-.267 1.211-1 2.26-2.029 2.917-1.029.657-2.278.877-3.451.61-.411-.091-.802-.262-1.148-.49-.346-.228-.648-.513-.896-.844-.248-.331-.435-.703-.55-1.098-.115-.395-.157-.808-.123-1.219.034-.411.148-.812.337-1.174.189-.362.451-.681.772-.941.321-.26.697-.454 1.098-.566.401-.112.821-.14 1.234-.081.413.059.812.198 1.174.41.362.212.681.485.941.805.26.32.454.684.566 1.076.112.392.14.802.081 1.205-.059.403-.198.792-.41 1.148-.212.356-.485.669-.805.923-.32.254-.684.442-1.076.548-.392.106-.802.127-1.205.062-.403-.065-.792-.204-1.148-.418-.356-.214-.669-.493-.923-.821-.254-.328-.442-.702-.548-1.105-.106-.403-.127-.823-.062-1.236.065-.413.204-.812.418-1.168.214-.356.493-.681.821-.958.328-.277.702-.48 1.105-.595.403-.115.823-.149 1.236-.099.413.05.812.176 1.168.371.356.195.681.456.958.774.277.318.48.682.595 1.076.115.394.149.805.099 1.208-.05.403-.176.792-.371 1.138-.195.346-.456.661-.774.928-.318.267-.682.459-1.076.563-.394.104-.805.127-1.208.069-.403-.058-.792-.186-1.138-.378-.346-.192-.661-.449-.928-.761-.267-.312-.459-.667-.563-1.054-.104-.387-.127-.788-.069-1.181.058-.393.186-.772.378-1.108.192-.336.449-.634.761-.884.312-.25.667-.427 1.054-.518.387-.091.788-.105 1.181-.039.393.066.772.202 1.108.403.336.201.634.464.884.782.25.318.427.681.518 1.077.091.396.105.807.039 1.21-.066.403-.202.792-.403 1.138-.201.346-.464.654-.782.904-.318.25-.681.427-1.077.518-.396.091-.807.105-1.21.039-.403-.066-.792-.202-1.138-.403-.346-.201-.654-.464-.904-.782-.25-.318-.427-.681-.518-1.077-.091-.396-.105-.807-.039-1.21.066-.403.202-.792.403-1.138.201-.346.464-.654.782-.904.318-.25.681-.427 1.077-.518z"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <div class="grid grid-cols-3 gap-4 max-w-4xl mx-auto fade-in">
+                <!-- Existing Instagram Images -->
+                <div class="instagram-item aspect-square bg-gradient-to-br from-primary-dark to-primary-accent rounded-lg overflow-hidden relative">
+                    <img src="instagram/01_hero_brand.jpg" alt="FSR Dumpsters Brand" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <p class="text-sm font-medium">Professional dumpster rental service in KC Metro</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="instagram-item aspect-square bg-gradient-to-br from-primary-accent to-secondary-accent rounded-lg overflow-hidden relative">
+                    <img src="instagram/02_before_after.jpg" alt="Before and After Cleanup" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <p class="text-sm font-medium">Transform your space with our reliable service</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="instagram-item aspect-square bg-gradient-to-br from-secondary-accent to-gold rounded-lg overflow-hidden relative">
+                    <img src="instagram/03_pricing_graphic.jpg" alt="Transparent Pricing" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <p class="text-sm font-medium">Straightforward pricing, no hidden fees</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="instagram-item aspect-square bg-gradient-to-br from-gold to-neutral rounded-lg overflow-hidden relative">
+                    <img src="instagram/04_customer_testimonial.jpg" alt="Customer Testimonial" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <p class="text-sm font-medium">Happy customers across Kansas City</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Placeholder Posts -->
+                <div class="instagram-item aspect-square bg-gradient-to-br from-primary-dark to-primary-accent rounded-lg flex items-center justify-center relative">
+                    <div class="text-center text-white p-4">
+                        <svg class="w-12 h-12 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <p class="text-sm font-semibold">Pro Tip</p>
+                        <p class="text-xs">Book by noon for same-day delivery</p>
+                    </div>
+                </div>
+                
+                <div class="instagram-item aspect-square bg-gradient-to-br from-primary-accent to-secondary-accent rounded-lg flex items-center justify-center relative">
+                    <div class="text-center text-white p-4">
+                        <svg class="w-12 h-12 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                        </svg>
+                        <p class="text-sm font-semibold">KC Pride</p>
+                        <p class="text-xs">Proudly serving our hometown</p>
+                    </div>
+                </div>
+                
+                <div class="instagram-item aspect-square bg-gradient-to-br from-secondary-accent to-gold rounded-lg flex items-center justify-center relative">
+                    <div class="text-center text-white p-4">
+                        <svg class="w-12 h-12 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+                        </svg>
+                        <p class="text-sm font-semibold">Fair Pricing</p>
+                        <p class="text-xs">15yd: $300 | 20yd: $400</p>
+                    </div>
+                </div>
+                
+                <div class="instagram-item aspect-square bg-gradient-to-br from-gold to-primary-dark rounded-lg flex items-center justify-center relative">
+                    <div class="text-center text-white p-4">
+                        <svg class="w-12 h-12 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <p class="text-sm font-semibold">Quality Service</p>
+                        <p class="text-xs">Reliable • Professional • Clean</p>
+                    </div>
+                </div>
+                
+                <div class="instagram-item aspect-square bg-gradient-to-br from-neutral to-primary-accent rounded-lg flex items-center justify-center relative">
+                    <div class="text-center text-white p-4">
+                        <svg class="w-12 h-12 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                        </svg>
+                        <p class="text-sm font-semibold">Call Today</p>
+                        <p class="text-xs">(913) 206-3467</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section id="book-now" class="py-16 gradient-bg text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-4 fade-in">
+                    Book Your Dumpster Today
+                </h2>
+                <p class="text-xl text-gray-200 fade-in">
+                    Fill out the form below or call us directly at <a href="tel:913-206-3467" class="text-gold hover:underline font-semibold">(913) 206-3467</a>
+                </p>
+            </div>
+            
+            <div class="bg-white rounded-2xl p-8 fade-in">
+                <form action="https://formspree.io/f/placeholder" method="POST" class="space-y-6" id="booking-form">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <!-- Name -->
+                        <div>
+                            <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">Full Name *</label>
+                            <input type="text" id="name" name="name" required 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-accent focus:border-transparent transition-colors">
+                        </div>
+                        
+                        <!-- Phone -->
+                        <div>
+                            <label for="phone" class="block text-sm font-semibold text-gray-700 mb-2">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-accent focus:border-transparent transition-colors">
+                        </div>
+                        
+                        <!-- Email -->
+                        <div>
+                            <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">Email Address *</label>
+                            <input type="email" id="email" name="email" required 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-accent focus:border-transparent transition-colors">
+                        </div>
+                        
+                        <!-- Dumpster Size -->
+                        <div>
+                            <label for="size" class="block text-sm font-semibold text-gray-700 mb-2">Dumpster Size *</label>
+                            <select id="size" name="size" required 
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-accent focus:border-transparent transition-colors">
+                                <option value="">Select Size</option>
+                                <option value="15-yard">15 Yard - $300/week</option>
+                                <option value="20-yard">20 Yard - $400/week</option>
+                            </select>
+                        </div>
+                        
+                        <!-- Delivery Date -->
+                        <div>
+                            <label for="delivery-date" class="block text-sm font-semibold text-gray-700 mb-2">Preferred Delivery Date *</label>
+                            <input type="date" id="delivery-date" name="delivery-date" required 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-accent focus:border-transparent transition-colors">
+                        </div>
+                        
+                        <!-- Project Type -->
+                        <div>
+                            <label for="project-type" class="block text-sm font-semibold text-gray-700 mb-2">Project Type</label>
+                            <select id="project-type" name="project-type" 
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-accent focus:border-transparent transition-colors">
+                                <option value="">Select Project Type</option>
+                                <option value="renovation">Home Renovation</option>
+                                <option value="cleanout">Home/Garage Cleanout</option>
+                                <option value="construction">Construction</option>
+                                <option value="roofing">Roofing Project</option>
+                                <option value="landscaping">Landscaping/Yard Work</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <!-- Delivery Address -->
+                    <div>
+                        <label for="address" class="block text-sm font-semibold text-gray-700 mb-2">Delivery Address *</label>
+                        <textarea id="address" name="address" rows="3" required 
+                                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-accent focus:border-transparent transition-colors" 
+                                  placeholder="Full street address, city, state, zip code"></textarea>
+                    </div>
+                    
+                    <!-- Notes -->
+                    <div>
+                        <label for="notes" class="block text-sm font-semibold text-gray-700 mb-2">Additional Notes</label>
+                        <textarea id="notes" name="notes" rows="3" 
+                                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-accent focus:border-transparent transition-colors" 
+                                  placeholder="Special delivery instructions, specific placement requests, etc."></textarea>
+                    </div>
+                    
+                    <!-- Submit Button -->
+                    <div class="text-center">
+                        <button type="submit" 
+                                class="btn-primary text-white px-12 py-4 rounded-lg text-lg font-bold hover:shadow-xl transition-all duration-300">
+                            Submit Booking Request
+                        </button>
+                        
+                        <div class="mt-4 text-gray-600">
+                            <p class="text-sm">Or call us directly for immediate booking:</p>
+                            <a href="tel:913-206-3467" class="text-2xl font-bold text-primary-accent hover:text-secondary-accent transition-colors">
+                                (913) 206-3467
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-dark text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="md:col-span-2">
+                    <img src="assets/fsr-logo.jpg" alt="FSR Dumpsters" class="h-20 w-auto mb-4">
+                    <p class="text-gray-300 mb-4">
+                        Professional dumpster rental service proudly serving the Kansas City Metro area. 
+                        Same-day delivery, competitive pricing, and reliable service since day one.
+                    </p>
+                    <div class="space-y-2 text-gray-300">
+                        <p><strong class="text-white">Address:</strong> 6308 N Main St, Gladstone, MO 64118</p>
+                        <p><strong class="text-white">Phone:</strong> <a href="tel:913-206-3467" class="text-primary-accent hover:text-gold transition-colors">(913) 206-3467</a></p>
+                        <p><strong class="text-white">Email:</strong> <a href="mailto:info@fsrdumpsters.com" class="text-primary-accent hover:text-gold transition-colors">info@fsrdumpsters.com</a></p>
+                    </div>
+                </div>
+                
+                <!-- Service Area -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Service Area</h4>
+                    <ul class="space-y-1 text-gray-300 text-sm">
+                        <li>Kansas City Metro</li>
+                        <li>Clay County, MO</li>
+                        <li>Jackson County, MO</li>
+                        <li>Platte County, MO</li>
+                        <li>Cass County, MO</li>
+                        <li>Johnson County, KS</li>
+                        <li>Wyandotte County, KS</li>
+                        <li>Leavenworth County, KS</li>
+                    </ul>
+                </div>
+                
+                <!-- Business Hours -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Business Hours</h4>
+                    <div class="space-y-1 text-gray-300 text-sm">
+                        <p><strong class="text-white">Monday - Friday:</strong><br>7:00 AM - 6:00 PM</p>
+                        <p><strong class="text-white">Saturday:</strong><br>7:00 AM - 6:00 PM</p>
+                        <p><strong class="text-white">Sunday:</strong><br>Closed</p>
+                    </div>
+                    
+                    <div class="mt-6">
+                        <a href="tel:913-206-3467" class="btn-primary text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 inline-block">
+                            Call Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2024 FSR Dumpsters. All rights reserved. | Professional dumpster rental service in Kansas City Metro</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Header shadow on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 10) {
+                header.classList.add('header-shadow');
+            } else {
+                header.classList.remove('header-shadow');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all fade-in elements
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Set minimum date for delivery date input (today)
+        document.addEventListener('DOMContentLoaded', function() {
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('delivery-date').setAttribute('min', today);
+        });
+
+        // Form validation and submission
+        document.getElementById('booking-form').addEventListener('submit', function(e) {
+            const requiredFields = this.querySelectorAll('[required]');
+            let isValid = true;
+            
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    isValid = false;
+                    field.classList.add('border-red-500');
+                } else {
+                    field.classList.remove('border-red-500');
+                }
+            });
+            
+            if (!isValid) {
+                e.preventDefault();
+                alert('Please fill out all required fields.');
+                return;
+            }
+            
+            // Form is valid, allow submission
+        });
+    </script>
+
+</body>
+</html>

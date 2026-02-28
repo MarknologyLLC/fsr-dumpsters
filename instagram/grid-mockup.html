@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FSR Dumpsters - Instagram Grid Mockup</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #000;
+            color: #fff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 935px;
+            margin: 0 auto;
+            background: #000;
+        }
+        
+        /* Profile Header */
+        .profile-header {
+            display: flex;
+            align-items: center;
+            padding: 30px 0 44px;
+            border-bottom: 1px solid #262626;
+            margin-bottom: 44px;
+        }
+        
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #E8720C, #D4A017);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 77px;
+            font-size: 48px;
+            font-weight: bold;
+            color: #1A1A2E;
+        }
+        
+        .profile-info h1 {
+            font-size: 28px;
+            font-weight: 300;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        
+        .profile-stats {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 20px;
+        }
+        
+        .stat {
+            color: #fff;
+        }
+        
+        .stat-number {
+            font-weight: 600;
+            font-size: 16px;
+        }
+        
+        .stat-label {
+            font-size: 16px;
+            color: #fff;
+        }
+        
+        .profile-bio {
+            max-width: 350px;
+        }
+        
+        .bio-title {
+            font-weight: 600;
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #fff;
+        }
+        
+        .bio-text {
+            font-size: 16px;
+            line-height: 24px;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+        
+        .bio-contact {
+            color: #E8720C;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        
+        .bio-contact:hover {
+            text-decoration: underline;
+        }
+        
+        /* Navigation */
+        .profile-nav {
+            display: flex;
+            justify-content: center;
+            border-bottom: 1px solid #262626;
+            margin-bottom: 28px;
+        }
+        
+        .nav-item {
+            padding: 16px 0;
+            margin: 0 30px;
+            border-top: 1px solid #fff;
+            color: #fff;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Grid */
+        .instagram-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 4px;
+            max-width: 935px;
+            margin: 0 auto;
+        }
+        
+        .grid-item {
+            aspect-ratio: 1;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            background: #1A1A2E;
+        }
+        
+        .grid-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .grid-item:hover img {
+            transform: scale(1.05);
+        }
+        
+        .grid-item:hover .overlay {
+            opacity: 1;
+        }
+        
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(26, 26, 46, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            color: #E8720C;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .profile-header {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px 0 30px;
+            }
+            
+            .profile-pic {
+                margin: 0 0 20px 0;
+                width: 120px;
+                height: 120px;
+                font-size: 36px;
+            }
+            
+            .profile-stats {
+                justify-content: center;
+            }
+            
+            .instagram-grid {
+                gap: 2px;
+            }
+            
+            .container {
+                padding: 0 10px;
+            }
+        }
+        
+        /* Loading placeholder for images */
+        .grid-item.loading {
+            background: linear-gradient(90deg, #1A1A2E 25%, #262626 50%, #1A1A2E 75%);
+            background-size: 200% 100%;
+            animation: loading 1.5s infinite;
+        }
+        
+        @keyframes loading {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Profile Header -->
+        <div class="profile-header">
+            <div class="profile-pic">FSR</div>
+            <div class="profile-info">
+                <h1>fsrdumpsters</h1>
+                <div class="profile-stats">
+                    <div class="stat">
+                        <span class="stat-number">47</span> <span class="stat-label">posts</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">1,284</span> <span class="stat-label">followers</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">312</span> <span class="stat-label">following</span>
+                    </div>
+                </div>
+                <div class="profile-bio">
+                    <div class="bio-title">FSR Dumpsters</div>
+                    <div class="bio-text">🏗️ Premium Waste Solutions for Kansas City<br>
+                    📍 Gladstone, MO<br>
+                    📱 15 yard ($300/wk) | 20 yard ($400/wk)</div>
+                    <a href="#" class="bio-contact">📞 Call for instant quote</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Navigation -->
+        <div class="profile-nav">
+            <a href="#" class="nav-item">Posts</a>
+        </div>
+        
+        <!-- Instagram Grid -->
+        <div class="instagram-grid">
+            <div class="grid-item">
+                <img src="01_hero_brand.jpg" alt="Hero Brand Shot" loading="lazy">
+                <div class="overlay">Premium Service</div>
+            </div>
+            <div class="grid-item">
+                <img src="02_before_after.jpg" alt="Before and After" loading="lazy">
+                <div class="overlay">Transformation</div>
+            </div>
+            <div class="grid-item">
+                <img src="03_pricing_graphic.jpg" alt="Pricing" loading="lazy">
+                <div class="overlay">Transparent Pricing</div>
+            </div>
+            <div class="grid-item">
+                <img src="04_customer_testimonial.jpg" alt="Happy Customer" loading="lazy">
+                <div class="overlay">5-Star Service</div>
+            </div>
+            <div class="grid-item">
+                <img src="05_brand_mission.jpg" alt="Brand Mission" loading="lazy">
+                <div class="overlay">Our Mission</div>
+            </div>
+            <div class="grid-item">
+                <img src="06_delivery_action.jpg" alt="Delivery Action" loading="lazy">
+                <div class="overlay">Professional Delivery</div>
+            </div>
+            <div class="grid-item">
+                <img src="07_educational_tips.jpg" alt="Educational Tips" loading="lazy">
+                <div class="overlay">Pro Tips</div>
+            </div>
+            <div class="grid-item">
+                <img src="08_kc_local_pride.jpg" alt="KC Local Pride" loading="lazy">
+                <div class="overlay">KC Pride</div>
+            </div>
+            <div class="grid-item">
+                <img src="09_cta_booking.jpg" alt="Book Today" loading="lazy">
+                <div class="overlay">Book Now</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add loading states and error handling for images
+        document.querySelectorAll('.grid-item img').forEach(img => {
+            const gridItem = img.parentElement;
+            gridItem.classList.add('loading');
+            
+            img.addEventListener('load', function() {
+                gridItem.classList.remove('loading');
+            });
+            
+            img.addEventListener('error', function() {
+                gridItem.classList.remove('loading');
+                this.style.display = 'none';
+                const overlay = gridItem.querySelector('.overlay');
+                if (overlay) {
+                    overlay.style.opacity = '1';
+                    overlay.innerHTML = 'Image Loading...';
+                    overlay.style.background = 'rgba(232, 114, 12, 0.8)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

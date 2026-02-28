@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FSR Dumpsters - Social Feed Component</title>
+    <style>
+        /* FSR Social Feed Component */
+        .fsr-social-feed {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: #1A1A2E;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        
+        .fsr-feed-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .fsr-feed-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #F5F5F5;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+        
+        .fsr-feed-subtitle {
+            font-size: 1.1rem;
+            color: #B0BEC5;
+            margin-bottom: 8px;
+        }
+        
+        .fsr-instagram-handle {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #E8720C;
+            font-weight: 600;
+            font-size: 1.1rem;
+            text-decoration: none;
+            padding: 12px 24px;
+            border: 2px solid #E8720C;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+        
+        .fsr-instagram-handle:hover {
+            background: #E8720C;
+            color: #1A1A2E;
+            transform: translateY(-2px);
+        }
+        
+        .fsr-instagram-icon {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+        
+        .fsr-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+        
+        .fsr-grid-item {
+            position: relative;
+            aspect-ratio: 1;
+            background: #262626;
+            border-radius: 12px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .fsr-grid-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 16px 32px rgba(232, 114, 12, 0.3);
+        }
+        
+        .fsr-grid-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .fsr-grid-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .fsr-grid-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(
+                135deg, 
+                rgba(26, 26, 46, 0.9) 0%, 
+                rgba(232, 114, 12, 0.9) 100%
+            );
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .fsr-grid-item:hover .fsr-grid-overlay {
+            opacity: 1;
+        }
+        
+        .fsr-overlay-title {
+            color: #F5F5F5;
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .fsr-overlay-text {
+            color: #F5F5F5;
+            font-size: 0.9rem;
+            line-height: 1.4;
+            opacity: 0.9;
+        }
+        
+        .fsr-cta-section {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid #262626;
+        }
+        
+        .fsr-cta-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #F5F5F5;
+            margin-bottom: 16px;
+        }
+        
+        .fsr-cta-text {
+            color: #B0BEC5;
+            font-size: 1.1rem;
+            margin-bottom: 24px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .fsr-cta-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .fsr-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 28px;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .fsr-btn-primary {
+            background: #E8720C;
+            color: #1A1A2E;
+        }
+        
+        .fsr-btn-primary:hover {
+            background: #D4A017;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(232, 114, 12, 0.4);
+        }
+        
+        .fsr-btn-secondary {
+            background: transparent;
+            color: #E8720C;
+            border: 2px solid #E8720C;
+        }
+        
+        .fsr-btn-secondary:hover {
+            background: #E8720C;
+            color: #1A1A2E;
+        }
+        
+        /* Loading states */
+        .fsr-loading {
+            background: linear-gradient(90deg, #262626 25%, #333 50%, #262626 75%);
+            background-size: 200% 100%;
+            animation: fsr-loading 1.5s infinite;
+        }
+        
+        @keyframes fsr-loading {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .fsr-social-feed {
+                padding: 30px 16px;
+            }
+            
+            .fsr-feed-title {
+                font-size: 2rem;
+            }
+            
+            .fsr-grid {
+                gap: 12px;
+            }
+            
+            .fsr-grid-overlay {
+                padding: 16px;
+            }
+            
+            .fsr-overlay-title {
+                font-size: 1rem;
+            }
+            
+            .fsr-overlay-text {
+                font-size: 0.8rem;
+            }
+            
+            .fsr-cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .fsr-btn {
+                min-width: 200px;
+                justify-content: center;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .fsr-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 8px;
+            }
+            
+            .fsr-grid-item:nth-child(7),
+            .fsr-grid-item:nth-child(8),
+            .fsr-grid-item:nth-child(9) {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body style="margin: 0; background: #0d0d0d;">
+
+<div class="fsr-social-feed">
+    <!-- Header -->
+    <div class="fsr-feed-header">
+        <h2 class="fsr-feed-title">Follow Our Work</h2>
+        <p class="fsr-feed-subtitle">See our premium dumpster solutions in action across Kansas City</p>
+        <a href="https://instagram.com/fsrdumpsters" class="fsr-instagram-handle" target="_blank" rel="noopener">
+            <svg class="fsr-instagram-icon" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+            @fsrdumpsters
+        </a>
+    </div>
+    
+    <!-- Instagram Grid -->
+    <div class="fsr-grid">
+        <div class="fsr-grid-item">
+            <img src="01_hero_brand.jpg" alt="Premium Dumpster Service" loading="lazy">
+            <div class="fsr-grid-overlay">
+                <div class="fsr-overlay-title">Premium Service</div>
+                <div class="fsr-overlay-text">Your Kansas City cleanup project deserves premium service. Industrial-strength solutions for serious projects.</div>
+            </div>
+        </div>
+        
+        <div class="fsr-grid-item">
+            <img src="02_before_after.jpg" alt="Transformation Results" loading="lazy">
+            <div class="fsr-grid-overlay">
+                <div class="fsr-overlay-title">Real Results</div>
+                <div class="fsr-overlay-text">One weekend, one FSR dumpster, and your space goes from chaos to organized perfection.</div>
+            </div>
+        </div>
+        
+        <div class="fsr-grid-item">
+            <img src="03_pricing_graphic.jpg" alt="Transparent Pricing" loading="lazy">
+            <div class="fsr-grid-overlay">
+                <div class="fsr-overlay-title">Fair Pricing</div>
+                <div class="fsr-overlay-text">15-yard at $300/week, 20-yard at $400/week. No surprises, includes delivery and disposal.</div>
+            </div>
+        </div>
+        
+        <div class="fsr-grid-item">
+            <img src="04_customer_testimonial.jpg" alt="Happy Customers" loading="lazy">
+            <div class="fsr-grid-overlay">
+                <div class="fsr-overlay-title">5-Star Service</div>
+                <div class="fsr-overlay-text">Happy customers are our favorite customers. Experience the FSR difference on your next project.</div>
+            </div>
+        </div>
+        
+        <div class="fsr-grid-item">
+            <img src="05_brand_mission.jpg" alt="Our Mission" loading="lazy">
+            <div class="fsr-grid-overlay">
+                <div class="fsr-overlay-title">Our Mission</div>
+                <div class="fsr-overlay-text">Premium waste solutions for Kansas City. We're your construction and cleanup partners.</div>
+            </div>
+        </div>
+        
+        <div class="fsr-grid-item">
+            <img src="06_delivery_action.jpg" alt="Professional Delivery" loading="lazy">
+            <div class="fsr-grid-overlay">
+                <div class="fsr-overlay-title">On-Time Delivery</div>
+                <div class="fsr-overlay-text">Professional drivers, careful placement, zero drama. Your dumpster arrives when you need it.</div>
+            </div>
+        </div>
+        
+        <div class="fsr-grid-item">
+            <img src="07_educational_tips.jpg" alt="Expert Tips" loading="lazy">
+            <div class="fsr-grid-overlay">
+                <div class="fsr-overlay-title">Expert Tips</div>
+                <div class="fsr-overlay-text">Pro tips from Kansas City's premium dumpster rental experts to save you time and money.</div>
+            </div>
+        </div>
+        
+        <div class="fsr-grid-item">
+            <img src="08_kc_local_pride.jpg" alt="Kansas City Local" loading="lazy">
+            <div class="fsr-grid-overlay">
+                <div class="fsr-overlay-title">Local Experts</div>
+                <div class="fsr-overlay-text">Born and raised in Kansas City. We know this metro and every cleanup challenge.</div>
+            </div>
+        </div>
+        
+        <div class="fsr-grid-item">
+            <img src="09_cta_booking.jpg" alt="Book Today" loading="lazy">
+            <div class="fsr-grid-overlay">
+                <div class="fsr-overlay-title">Book Now</div>
+                <div class="fsr-overlay-text">Stop waiting, start cleaning. One call gets you premium service and fair pricing.</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Call to Action -->
+    <div class="fsr-cta-section">
+        <h3 class="fsr-cta-title">Ready to Start Your Project?</h3>
+        <p class="fsr-cta-text">
+            Get premium dumpster rental service with transparent pricing and professional delivery. 
+            Serving the entire Kansas City metro area.
+        </p>
+        <div class="fsr-cta-buttons">
+            <a href="tel:+1234567890" class="fsr-btn fsr-btn-primary">
+                📞 Call Now
+            </a>
+            <a href="#quote" class="fsr-btn fsr-btn-secondary">
+                Get Quote
+            </a>
+        </div>
+    </div>
+</div>
+
+<script>
+// Enhanced image loading with error handling
+document.addEventListener('DOMContentLoaded', function() {
+    const gridItems = document.querySelectorAll('.fsr-grid-item');
+    
+    gridItems.forEach(item => {
+        const img = item.querySelector('img');
+        const overlay = item.querySelector('.fsr-grid-overlay');
+        
+        // Add loading state
+        item.classList.add('fsr-loading');
+        
+        img.addEventListener('load', function() {
+            item.classList.remove('fsr-loading');
+        });
+        
+        img.addEventListener('error', function() {
+            item.classList.remove('fsr-loading');
+            // Hide image and show overlay permanently
+            this.style.display = 'none';
+            overlay.style.opacity = '1';
+            overlay.style.background = 'rgba(232, 114, 12, 0.9)';
+            
+            // Update overlay content for missing image
+            const title = overlay.querySelector('.fsr-overlay-title');
+            const text = overlay.querySelector('.fsr-overlay-text');
+            if (title) title.textContent = 'Coming Soon';
+            if (text) text.textContent = 'New content loading...';
+        });
+    });
+    
+    // Add smooth scrolling for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+    
+    // Add intersection observer for animations
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+    
+    // Observe grid items for scroll animations
+    gridItems.forEach((item, index) => {
+        item.style.opacity = '0';
+        item.style.transform = 'translateY(20px)';
+        item.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
+        observer.observe(item);
+    });
+});
+</script>
+
+</body>
+</html>

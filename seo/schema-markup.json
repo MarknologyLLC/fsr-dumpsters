@@ -1,0 +1,329 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://fsrdumpsters.com/#organization",
+      "name": "FSR Dumpsters",
+      "alternateName": "FSR Dumpster Rental",
+      "description": "Professional dumpster rental service in Kansas City Metro area. 15 and 20 yard roll-off containers for residential and commercial projects. Serving 7 counties across Missouri and Kansas.",
+      "url": "https://fsrdumpsters.com",
+      "telephone": "816-555-1234",
+      "email": "info@fsrdumpsters.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "6308 N Main St",
+        "addressLocality": "Gladstone",
+        "addressRegion": "MO",
+        "postalCode": "64118",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "39.2031",
+        "longitude": "-94.5553"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "07:00",
+          "closes": "17:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "08:00",
+          "closes": "15:00"
+        }
+      ],
+      "priceRange": "$300-$400",
+      "currenciesAccepted": "USD",
+      "paymentAccepted": "Cash, Check, Credit Card",
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": "39.0997",
+          "longitude": "-94.5786"
+        },
+        "geoRadius": "50000"
+      },
+      "serviceArea": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Clay County",
+          "addressRegion": "MO"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Jackson County",
+          "addressRegion": "MO"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Platte County",
+          "addressRegion": "MO"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Cass County",
+          "addressRegion": "MO"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Johnson County",
+          "addressRegion": "KS"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Wyandotte County",
+          "addressRegion": "KS"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Leavenworth County",
+          "addressRegion": "KS"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/fsrdumpsters",
+        "https://www.yelp.com/biz/fsr-dumpsters-gladstone",
+        "https://www.google.com/maps/place/FSR+Dumpsters"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "bestRating": "5",
+        "worstRating": "1",
+        "ratingCount": "127"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Dumpster Rental Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "15 Yard Dumpster Rental",
+              "description": "15-yard roll-off dumpster perfect for small to medium projects, home cleanouts, and minor renovations."
+            },
+            "price": "300.00",
+            "priceCurrency": "USD",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "300.00",
+              "priceCurrency": "USD",
+              "unitCode": "WEE",
+              "unitText": "per week"
+            },
+            "availability": "https://schema.org/InStock",
+            "areaServed": {
+              "@type": "GeoCircle",
+              "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": "39.0997",
+                "longitude": "-94.5786"
+              },
+              "geoRadius": "50000"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "20 Yard Dumpster Rental",
+              "description": "20-yard roll-off dumpster ideal for larger projects, roofing jobs, major renovations, and construction debris."
+            },
+            "price": "400.00",
+            "priceCurrency": "USD",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "400.00",
+              "priceCurrency": "USD",
+              "unitCode": "WEE",
+              "unitText": "per week"
+            },
+            "availability": "https://schema.org/InStock",
+            "areaServed": {
+              "@type": "GeoCircle",
+              "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": "39.0997",
+                "longitude": "-94.5786"
+              },
+              "geoRadius": "50000"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://fsrdumpsters.com/#15yard-service",
+      "name": "15 Yard Dumpster Rental",
+      "description": "Professional 15-yard roll-off dumpster rental service for residential and light commercial projects in Kansas City Metro.",
+      "provider": {
+        "@id": "https://fsrdumpsters.com/#organization"
+      },
+      "serviceType": "Dumpster Rental",
+      "category": "Waste Management",
+      "offers": {
+        "@type": "Offer",
+        "price": "300.00",
+        "priceCurrency": "USD",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "300.00",
+          "priceCurrency": "USD",
+          "unitCode": "WEE",
+          "unitText": "per week"
+        }
+      },
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": "39.0997",
+          "longitude": "-94.5786"
+        },
+        "geoRadius": "50000"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://fsrdumpsters.com/#20yard-service",
+      "name": "20 Yard Dumpster Rental",
+      "description": "Professional 20-yard roll-off dumpster rental service for larger residential and commercial projects in Kansas City Metro.",
+      "provider": {
+        "@id": "https://fsrdumpsters.com/#organization"
+      },
+      "serviceType": "Dumpster Rental",
+      "category": "Waste Management",
+      "offers": {
+        "@type": "Offer",
+        "price": "400.00",
+        "priceCurrency": "USD",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "400.00",
+          "priceCurrency": "USD",
+          "unitCode": "WEE",
+          "unitText": "per week"
+        }
+      },
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": "39.0997",
+          "longitude": "-94.5786"
+        },
+        "geoRadius": "50000"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does dumpster rental cost in Kansas City?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our dumpster rental prices are straightforward: 15-yard dumpsters are $300 per week, and 20-yard dumpsters are $400 per week. This includes delivery, pickup, and disposal fees within our Kansas City Metro service area. No hidden charges or surprise fees."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What size dumpster do I need for my project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A 15-yard dumpster works well for small to medium home cleanouts, garage cleanouts, small remodeling projects, and minor landscaping debris. A 20-yard dumpster is ideal for larger home renovations, roofing projects, major cleanouts, and construction debris. If you're unsure, call us at (816) 555-1234 for personalized recommendations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long can I keep the dumpster?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our standard rental period is 7 days. This gives you plenty of time to complete your project without feeling rushed. If you need the dumpster longer, contact us to discuss extended rental options."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What areas do you serve around Kansas City?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We serve the entire Kansas City Metro area across 7 counties: Clay, Jackson, Platte, and Cass counties in Missouri, plus Johnson, Wyandotte, and Leavenworth counties in Kansas. This includes Kansas City, Gladstone, Liberty, Independence, Overland Park, Olathe, Lenexa, Lee's Summit, Blue Springs, and surrounding communities."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How quickly can you deliver a dumpster?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We offer same-day delivery when you call before noon, Monday through Friday. For weekend delivery, please call by Thursday to ensure availability. Our goal is to get you the dumpster when you need it."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://fsrdumpsters.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Dumpster Rental Kansas City",
+          "item": "https://fsrdumpsters.com/#services"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://fsrdumpsters.com/#organization",
+      "name": "FSR Dumpsters",
+      "url": "https://fsrdumpsters.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://fsrdumpsters.com/images/fsr-dumpsters-logo.png",
+        "width": "300",
+        "height": "120"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "816-555-1234",
+        "contactType": "Customer Service",
+        "areaServed": ["MO", "KS"],
+        "availableLanguage": ["English"]
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "6308 N Main St",
+        "addressLocality": "Gladstone",
+        "addressRegion": "MO",
+        "postalCode": "64118",
+        "addressCountry": "US"
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "FSR Management"
+      },
+      "foundingDate": "2020",
+      "foundingLocation": {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Gladstone",
+          "addressRegion": "MO"
+        }
+      }
+    }
+  ]
+}

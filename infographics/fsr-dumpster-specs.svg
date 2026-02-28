@@ -1,0 +1,76 @@
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bg { fill: #1A1A2E; }
+      .accent { fill: #E8720C; }
+      .secondary { fill: #C62828; }
+      .neutral { fill: #B0BEC5; }
+      .light { fill: #F5F5F5; }
+      .gold { fill: #D4A017; }
+      .title { font-family: Arial, sans-serif; font-size: 24px; font-weight: bold; }
+      .subtitle { font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; }
+      .body { font-family: Arial, sans-serif; font-size: 14px; }
+      .small { font-family: Arial, sans-serif; font-size: 12px; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="500" class="bg"/>
+  
+  <!-- Left Side: Size Comparison -->
+  <g id="size-comparison">
+    <text x="200" y="50" class="title light" text-anchor="middle">FSR DUMPSTER SIZES</text>
+    
+    <!-- 15 Yard Dumpster -->
+    <rect x="50" y="100" width="150" height="80" rx="8" fill="none" stroke="#E8720C" stroke-width="3"/>
+    <rect x="35" y="120" width="15" height="40" class="secondary"/>
+    <text x="125" y="135" class="subtitle" text-anchor="middle" fill="#1A1A2E">15 YARD</text>
+    <text x="125" y="155" class="body accent" text-anchor="middle">/week</text>
+    
+    <!-- 20 Yard Dumpster -->
+    <rect x="50" y="220" width="200" height="100" rx="8" fill="none" stroke="#E8720C" stroke-width="3"/>
+    <rect x="35" y="245" width="15" height="50" class="secondary"/>
+    <text x="150" y="265" class="subtitle" text-anchor="middle" fill="#1A1A2E">20 YARD</text>
+    <text x="150" y="285" class="body accent" text-anchor="middle">/week</text>
+    
+    <text x="200" y="380" class="subtitle gold" text-anchor="middle">7-DAY RENTAL PERIOD</text>
+  </g>
+  
+  <!-- Right Side: Technical Blueprint -->
+  <g id="technical-blueprint">
+    <text x="600" y="50" class="title light" text-anchor="middle">TECHNICAL SPECIFICATIONS</text>
+    
+    <!-- Main Container Blueprint -->
+    <rect x="450" y="150" width="300" height="120" fill="none" stroke="#E8720C" stroke-width="2" stroke-dasharray="5,3"/>
+    
+    <!-- Walk-in Side Door -->
+    <rect x="430" y="170" width="25" height="80" fill="none" stroke="#C62828" stroke-width="3"/>
+    <line x1="430" y1="170" x2="430" y2="250" stroke="#C62828" stroke-width="2"/>
+    <line x1="455" y1="175" x2="455" y2="245" stroke="#C62828" stroke-width="1" stroke-dasharray="3,2"/>
+    
+    <!-- Dimensions -->
+    <line x1="450" y1="290" x2="750" y2="290" stroke="#F5F5F5" stroke-width="1" marker-start="url(#arrowhead)" marker-end="url(#arrowhead)"/>
+    <text x="600" y="310" class="small light" text-anchor="middle">LENGTH: 22 FT</text>
+    
+    <line x1="400" y1="150" x2="400" y2="270" stroke="#F5F5F5" stroke-width="1" marker-start="url(#arrowhead)" marker-end="url(#arrowhead)"/>
+    <text x="380" y="210" class="small light" text-anchor="middle">HEIGHT: 8 FT</text>
+    
+    <!-- Side Door Callout -->
+    <line x1="442" y1="210" x2="520" y2="120" stroke="#C62828" stroke-width="2" marker-end="url(#arrowhead-red)"/>
+    <text x="530" y="115" class="body secondary" text-anchor="start" font-weight="bold">WALK-IN</text>
+    <text x="530" y="135" class="body secondary" text-anchor="start" font-weight="bold">SIDE DOOR</text>
+    
+    <text x="600" y="380" class="subtitle gold" text-anchor="middle">DURA-HAUL CONTAINERS</text>
+    <text x="600" y="400" class="body neutral" text-anchor="middle">GLADSTONE, MO</text>
+  </g>
+  
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#F5F5F5"/>
+    </marker>
+    <marker id="arrowhead-red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#C62828"/>
+    </marker>
+  </defs>
+</svg>
