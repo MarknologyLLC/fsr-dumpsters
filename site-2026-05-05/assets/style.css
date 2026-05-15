@@ -1,0 +1,246 @@
+/* Kansas City Dumpster Rentals - Custom styles beyond Tailwind */
+
+/* Font import handled in HTML via preconnect + link */
+
+/* Hero gradient overlay */
+.hero-overlay {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.2) 60%, rgba(0,0,0,0.55) 100%);
+}
+
+/* Orange CTA button */
+.btn-orange {
+  background-color: #E8611A;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+.btn-orange:hover {
+  background-color: #C44C0F;
+  transform: translateY(-1px);
+}
+
+/* Charcoal secondary button */
+.btn-charcoal {
+  background-color: #333333;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  transition: background-color 0.2s ease;
+}
+.btn-charcoal:hover {
+  background-color: #1a1a1a;
+}
+
+/* Orange text (safe on white backgrounds) */
+.text-brand-orange {
+  color: #C44C0F;
+}
+
+/* Orange background for accents */
+.bg-brand-orange {
+  background-color: #E8611A;
+}
+
+/* Heading font */
+h1, h2, h3, h4, .font-heading {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Body font */
+body, p, li, td, .font-body {
+  font-family: 'Inter', 'Open Sans', sans-serif;
+}
+
+/* Nav link underline on hover */
+.nav-link {
+  position: relative;
+  color: #333333;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+.nav-link:hover {
+  color: #C44C0F;
+}
+.nav-link.active {
+  color: #C44C0F;
+}
+
+/* Pricing card hover */
+.pricing-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.pricing-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+}
+
+/* Feature icon circle */
+.icon-circle {
+  width: 56px;
+  height: 56px;
+  background-color: #FEF0E7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* FAQ accordion */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.faq-answer.open {
+  max-height: 500px;
+}
+
+/* Mobile nav */
+.mobile-nav {
+  display: none;
+}
+.mobile-nav.open {
+  display: block;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  font-size: 0.8125rem;
+  color: #6b7280;
+}
+.breadcrumb a {
+  color: #6b7280;
+  text-decoration: none;
+}
+.breadcrumb a:hover {
+  color: #C44C0F;
+}
+
+/* Table styling */
+.fee-table th {
+  background-color: #333333;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8125rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.75rem 1rem;
+}
+.fee-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 0.9375rem;
+}
+.fee-table tr:last-child td {
+  border-bottom: none;
+}
+.fee-table tr:hover td {
+  background-color: #FEF0E7;
+}
+
+/* Trust bar */
+.trust-bar-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+/* Step numbers */
+.step-number {
+  width: 48px;
+  height: 48px;
+  background-color: #E8611A;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+/* Sticky phone bar on mobile */
+.sticky-cta {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background-color: #E8611A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.875rem 1rem;
+  box-shadow: 0 -4px 16px rgba(0,0,0,0.15);
+}
+
+@media (min-width: 768px) {
+  .sticky-cta {
+    display: none;
+  }
+}
+
+/* Responsive picture */
+picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Page hero */
+.page-hero {
+  background-color: #333333;
+  padding: 3rem 1.5rem 2.5rem;
+  text-align: center;
+}
+
+/* Prohibited items grid */
+.prohibited-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+/* Green check / red X */
+.check-green { color: #16a34a; }
+.x-red { color: #dc2626; }
+
+/* Form */
+.form-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  transition: border-color 0.2s;
+}
+.form-input:focus {
+  outline: none;
+  border-color: #E8611A;
+  box-shadow: 0 0 0 3px rgba(232,97,26,0.12);
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Print styles */
+@media print {
+  .sticky-cta, nav { display: none !important; }
+}
