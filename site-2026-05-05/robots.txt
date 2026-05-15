@@ -1,9 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://kansascitydumpsterrentals.com/sitemap.xml
-
-# AI crawler content index
-# Full site content for LLM/AI search systems:
-# https://kansascitydumpsterrentals.com/llms.txt
-# https://kansascitydumpsterrentals.com/llms-full.txt
